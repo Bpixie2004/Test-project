@@ -9,6 +9,8 @@ public class Dummy : MonoBehaviour {
 		
 	}
 	
+    //I prefer if you did xyz
+
 	// Update is called once per frame
 	void Update () {
 		
