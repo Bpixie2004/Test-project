@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//This is going to cause a conflict
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
