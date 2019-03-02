@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+namespace Jincom.Donovan.Tutorial
+{ 
 
 public class PlayerController : MonoBehaviour
 {
@@ -15,4 +17,5 @@ public class PlayerController : MonoBehaviour
     {
         
     }
+}
 }

@@ -1,45 +1,48 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class ArrayCheck : MonoBehaviour
-
+namespace Jincom.Donovan.Tutorial
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public class ArrayCheck : MonoBehaviour
+
     {
-        int[] newArray = new int[] { 6, 7, 32, 58 };
-        int x = 0;
-
-
-
-        for (int i = 0; i < newArray.Length; i++)
+        // Start is called before the first frame update
+        void Start()
         {
-           x = x + newArray[i];
-            
+            int[] newArray = new int[] { 6, 7, 32, 58 };
+            int x = 0;
+
+
+
+            for (int i = 0; i < newArray.Length; i++)
+            {
+                x = x + newArray[i];
+
+            }
+            if (x > 200)
+            {
+                Debug.Log("This number is above 200");
+            }
+            else if (x < 200)
+            {
+                Debug.Log("This number is less than 200");
+            }
+            else
+            {
+                Debug.Log("this is equal to 200");
+            }
+
+            Debug.Log(x);
+
+
+
         }
-        if (x > 200) 
+
+        // Update is called once per frame
+        void Update()
         {
-            Debug.Log("This number is above 200");
+
         }
-        else if (x < 200)
-        {
-            Debug.Log("This number is less than 200");
-        }
-        else
-        {
-            Debug.Log("this is equal to 200");
-        }
-
-        Debug.Log(x);
-
-
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }

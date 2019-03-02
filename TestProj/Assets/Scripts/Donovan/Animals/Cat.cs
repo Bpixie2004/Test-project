@@ -1,18 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Cat : Animal
+namespace Jincom.Donovan.Animals
 {
-    private string owner;
-    private string name;
 
-    public override void Move()
+    public class Cat : Animal
     {
-        base.Move();
-        Debug.Log("Cat Move");
+        private string owner;
+        private string name;
+
+        public override void Move()
+        {
+            base.Move();
+            Debug.Log("Cat Move");
+        }
+
+
     }
-
-
 }
-

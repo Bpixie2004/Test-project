@@ -1,59 +1,62 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Animal 
+namespace Jincom.Donovan.Animals
 {
-    private string _type;
-    private string _color;
-    private int _age;
-    public int Age
+
+    public class Animal
     {
-        get { return _age;}
-        set
+        private string _type;
+        private string _color;
+        private int _age;
+        public int Age
         {
-            if (value < 0)
+            get { return _age; }
+            set
             {
-                Debug.LogError("Age cannot be less than 0 ");
-            }
-            else
-            {
-                _age = value;
+                if (value < 0)
+                {
+                    Debug.LogError("Age cannot be less than 0 ");
+                }
+                else
+                {
+                    _age = value;
+                }
             }
         }
-    }
-    private int numberOfLegs;
-    public int NumberOfLegs
-    {
-        get { return numberOfLegs; }
-        set
+        private int numberOfLegs;
+        public int NumberOfLegs
         {
-            if (value < 0)
+            get { return numberOfLegs; }
+            set
             {
-                Debug.LogError("Legs must be above 0");
+                if (value < 0)
+                {
+                    Debug.LogError("Legs must be above 0");
+                }
+                else
+                {
+                    numberOfLegs = value;
+                }
+
             }
-            else
-            {
-                numberOfLegs = value;
-            }
+
+
+        }
+
+
+        public virtual void Move()
+        {
+            Debug.Log("Animal Move");
+        }
+
+        public void Eat()
+        {
+            Debug.Log("Eat");
 
         }
 
 
     }
-
-
-    public virtual void Move()
-    {
-        Debug.Log("Animal Move");
-    }
-
-    public void Eat()
-    {
-        Debug.Log("Eat");
-
-    }
-
 
 }
-
