@@ -6,7 +6,7 @@ namespace Jincom.Berni.Animals
 
     public class Cat : Animal
     {
-        public override void Move()
+        protected override void Move()
         {
             base.Move();
             Debug.Log("Cat Move");

@@ -6,9 +6,9 @@ namespace Jincom.Berni.Animals
 
     public class Animal
     {
-        private string _type;
-        private string _color;
-        private int _age;
+        protected string _type;
+        protected string _color;
+        protected int _age;
 
         public int Age
         {
@@ -43,8 +43,21 @@ namespace Jincom.Berni.Animals
             }
         }
 
+        public enum AnimalMoveState
+        {
+            Walking,
+            Running,
+            Sitting
+        }
 
-        public virtual void Move()
+        protected AnimalMoveState _animalMoveState = AnimalMoveState.Running;
+
+        public AnimalMoveState MoveState
+        {
+            get { return _animalMoveState; }
+        }
+
+        protected virtual void Move()
         {
 
             Debug.Log("Animal Move");
