@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Jincom.Donovan;
+
 namespace Jincom.Berni.Animals
 {
 
@@ -20,6 +22,8 @@ namespace Jincom.Berni.Animals
 
             //dog.Legs = 4;
             //Debug.Log(dog.Legs);
+
+            Jincom.Donovan.Animals.Dog mimi = new Donovan.Animals.Dog();
 
             Dog Spot = new Dog();
             Spot.Move();
